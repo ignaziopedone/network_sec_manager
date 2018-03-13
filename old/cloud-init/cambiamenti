@@ -1,0 +1,30 @@
+sudo nano /etc/network/interfaces.d/50-cloud-init.cfg
+
+change the file as follow:
+  GNU nano 2.5.3   File: /etc/network/interfaces.d/50-cloud-init.cfg  Modified  
+
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+auto lo
+iface lo inet loopback
+
+auto ens3
+iface ens3 inet dhcp
+
+auto ens4
+iface ens4 inet dhcp
+
+auto ens5
+iface ens5 inet dhcp
+
+sudo /etc/init.d/networking restart
+
+sudo ip route add 8.8.8.8 via 22.22.22.6 dev ens5
+
+sudo iptables -t nat -A POSTROUTING -o ens5 -j MASQUERADE
+
+
+Una volta implementato questo meccanismo è possibile utilizzare come precedentemente le immagini, dunque l'unica modifica è nella parte di configurazione della rete.

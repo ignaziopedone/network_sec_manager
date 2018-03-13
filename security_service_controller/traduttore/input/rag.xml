@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mapping xmlns="http://www.example.org/Refinement_Schema">
+    <service_graph>
+        <service serviceID="Service0">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service1">
+            <PSA name="squid">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L7</capability_list>
+                    <capability_list>Timing</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_faed12c2-a677-485d-a288-3052238d9ed3"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+	<service serviceID="Service0a">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2a">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service1a">
+            <PSA name="squid">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L7</capability_list>
+                    <capability_list>Timing</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_faed12c2-a677-485d-a288-3052238d9ed3"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+	<service serviceID="Service0b">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2b">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service1b">
+            <PSA name="squid">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L7</capability_list>
+                    <capability_list>Timing</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_faed12c2-a677-485d-a288-3052238d9ed3"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+	<service serviceID="Service0c">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2c">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service1c">
+            <PSA name="squid">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L7</capability_list>
+                    <capability_list>Timing</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_faed12c2-a677-485d-a288-3052238d9ed3"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+	<service serviceID="Service0d">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2d">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service1d">
+            <PSA name="squid">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L7</capability_list>
+                    <capability_list>Timing</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_faed12c2-a677-485d-a288-3052238d9ed3"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+	<service serviceID="Service0e">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2e">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service1e">
+            <PSA name="squid">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L7</capability_list>
+                    <capability_list>Timing</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_faed12c2-a677-485d-a288-3052238d9ed3"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+	<service serviceID="Service0f">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2f">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service1f">
+            <PSA name="squid">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L7</capability_list>
+                    <capability_list>Timing</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_faed12c2-a677-485d-a288-3052238d9ed3"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+	<service serviceID="Service0g">
+            <PSA name="iptables">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Filtering_L4</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_a99c4c8d-615a-425c-aa6b-2648d8106d3f"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <service serviceID="Service2g">
+            <PSA name="dansguardian">
+                <PSA_info/>
+                <PSA_characteristic cost="1.0" latency="1.0" rating="1.0"/>
+                <capability>
+                    <capability_list>Advanced_parental_control</capability_list>
+                    <capability_list>TrafficInspection_L7</capability_list>
+                </capability>
+                <MSPL_list>
+                    <mspl_list id="MSPL_c28dd968-51ee-40b3-8e0e-d8616a4b5999"/>
+                </MSPL_list>
+            </PSA>
+        </service>
+        <rootService>Service0</rootService>
+        <endService>Service2g</endService>
+        <edge>
+            <src_Service>Service0</src_Service>
+            <dst_Service>Service2</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service2</src_Service>
+            <dst_Service>Service1</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service1</src_Service>
+            <dst_Service>Service0a</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service0a</src_Service>
+            <dst_Service>Service1a</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service1a</src_Service>
+            <dst_Service>Service2a</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service2a</src_Service>
+            <dst_Service>Service0b</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service0b</src_Service>
+            <dst_Service>Service1b</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service1b</src_Service>
+            <dst_Service>Service2b</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service2b</src_Service>
+            <dst_Service>Service0c</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service0c</src_Service>
+            <dst_Service>Service1c</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service1c</src_Service>
+            <dst_Service>Service2c</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service2c</src_Service>
+            <dst_Service>Service0d</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service0d</src_Service>
+            <dst_Service>Service1d</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service1d</src_Service>
+            <dst_Service>Service2d</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service2d</src_Service>
+            <dst_Service>Service0e</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service0e</src_Service>
+            <dst_Service>Service1e</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service1e</src_Service>
+            <dst_Service>Service2e</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service2e</src_Service>
+            <dst_Service>Service0f</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service0f</src_Service>
+            <dst_Service>Service1f</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service1f</src_Service>
+            <dst_Service>Service2f</dst_Service>
+        </edge>
+	<edge>
+            <src_Service>Service2f</src_Service>
+            <dst_Service>Service0g</dst_Service>
+        </edge>
+        <edge>
+            <src_Service>Service0g</src_Service>
+            <dst_Service>Service2g</dst_Service>
+        </edge>
+    </service_graph>
+</Mapping>
+

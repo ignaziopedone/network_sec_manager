@@ -1,0 +1,48 @@
+
+#!/bin/bash
+IFS=$' \t\n'
+echo "Start interfaces configuration..."
+echo "Set mgmt iface..."
+ip_subnet=$(ip route | grep ens5 | awk '{print $1}')
+echo $ip_subnet
+ip=$(ifconfig ens5 2>/dev/null | awk '/Bcast:/ {print $3}'| sed 's/Bcast://')
+echo "Address broadcast: $ip"
+ip_nmap=$(nmap -sn $ip_subnet -oG - | awk '$4=="Status:" && $5=="Up" {print $2}')
+echo $ip_nmap
+for i in $ip_nmap
+do
+if [ $(echo $i | cut -f 4 -d.) != "2" ]
+then
+  ip_ens5_next=$i
+  echo "ok"
+fi
+
+done
+echo $ip_ens5_next
+IFS=$' '
+ip_final=$(echo $ip_ens5_next)
+sudo ip route add 8.8.8.8/24 via $ip_final
+#sudo ip route add 10.208.0.0/24 via 10.208.0.1 dev ens3
+echo "ens3 configured..."
+#sudo ip route del default
+echo "wait..."
+#sudo ip route add default via $ip dev ens5
+echo "ens5 configured..."
+#sudo iptables -t nat -A POSTROUTING -o ens5 -j MASQUERADE
+echo "iptables configured..."
+unset IFS
+
+
+Network
+
+sudo sh -c 'cat append.sh >> /etc/network/interfaces.d/50-cloud-init.cfg'
+sudo sh -c '/etc/init.d/networking restart'
+
+append.sh
+
+
+auto ens4
+iface ens4 inet dhcp
+
+auto ens5
+iface ens5 inet dhcp
