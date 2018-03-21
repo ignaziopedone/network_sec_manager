@@ -21,19 +21,21 @@ echo $ip_ens5_next
 ip_final=$(echo $ip_ens5_next)
 echo "ip nexthop: $ip_final"
 IFS=$' '
-echo "set DNAT"
-sudo iptables -t nat -A PREROUTING -i ens4 -j DNAT --to-destination $ip_final
-echo "set SNAT"
-sudo iptables -t nat -A POSTROUTING -o ens5 -d $ip_final -j SNAT --to-source $ip
+# echo "set DNAT"
+# sudo iptables -t nat -A PREROUTING -i ens4 -j DNAT --to-destination $ip_final
+# echo "set SNAT"
+# sudo iptables -t nat -A POSTROUTING -o ens5 -d $ip_final -j SNAT --to-source $ip
 
-#sudo ip route add 8.8.8.0/24 via $ip_final dev ens5
-#sudo ip route add 8.8.8.0/24 via $ip_final dev ens5
-#sudo ip route add 10.208.0.0/24 via 10.208.0.1 dev ens3
-#echo "ens3 configured..."
-#sudo ip route del default
-#echo "wait..."
-#sudo ip route add default via $ip dev ens5
-#echo "ens5 configured..."
-#sudo iptables -t nat -A POSTROUTING -o ens5 -j MASQUERADE
-#echo "iptables configured..."
+# This command allow natting capability on the output interfaces
+sudo iptables -t nat -A POSTROUTING -o ens5 -j MASQUERADE
+
+# These commands allow to forward packet in the chain
+# You should use more interesting mechanisms such as OpenStack networking-sfc
+sudo ip route add 8.8.8.8 via 10.208.0.1 dev ens3
+sudo ip route add 130.192.1.95 via 10.208.0.1 dev ens3
+sudo ip route del default
+sudo ip route add default via $ip_final dev ens5
+
+
+
 unset IFS
